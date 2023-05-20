@@ -1,54 +1,67 @@
 body {
-  background: rgba(0, 0, 0, 0.5) url('/assets/images/Calcetto.jpg') no-repeat center center fixed;
-  background-size: cover;
-  background-blend-mode: saturation;
-  min-height: 100vh;
+	background: rgba(0, 0, 0, 0.5) url("/assets/images/Calcetto.jpg") no-repeat
+		center center fixed;
+	background-size: cover;
+	background-blend-mode: multiply;
+	min-height: 100vh;
 }
 
-header, footer {
-  backdrop-filter: blur(4px);
+header {
+	backdrop-filter: blur(4px);
 }
 
 footer a {
-  color: #5f3afc;
+	color: #5f3afc;
 }
 
-@media(max-width: 991px) {
-  .sidebar {
-    background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-  }
+@media (max-width: 991px) {
+	.sidebar {
+		background-color: rgba(255, 255, 255, 0.15);
+		backdrop-filter: blur(10px);
+	}
 }
 
 .btn.btn-primary {
-  background-color: #5f3afc;
-  border-color: #5f3afc;
+	background-color: #5f3afc;
+	border-color: #5f3afc;
 }
 
 .btn.btn-primary:active {
-  background-color: #3a1f5f;
-  border-color: #3a1f5f;
+	background-color: #3a1f5f;
+	border-color: #3a1f5f;
 }
 
 .btn.btn-primary:active {
-  background-color: #3a1f5f;
-  border-color: #3a1f5f;
+	background-color: #3a1f5f;
+	border-color: #3a1f5f;
 }
 
 input[type="search"] {
-  outline: none;
+	outline: none;
 }
 
 #search-bar button {
-  background-color: #5f3afc;
+	background-color: #5f3afc;
 }
 
 .w-fit {
-  width: -moz-fit-content;
-  width: -webkit-fit-content;
-  width: fit-content;
+	width: -moz-fit-content;
+	width: -webkit-fit-content;
+	width: fit-content;
 }
 
 .carousel-item {
-  max-width: 600px;
+	max-width: 750px;
+}
+
+.carousel-item img {
+	height: 50vh;
+}
+
+#error-page {
+	min-height: 70vh;
+}
+
+.place-center {
+	place-content: center;
 }
